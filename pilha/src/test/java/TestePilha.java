@@ -21,7 +21,7 @@ public class TestePilha {
     }
 
     @Test
-    public void empilhaEDesmpilha(){
+    public void empilhaEDesempilha(){
         Pilha p = new Pilha();
         p.empilha("primeiro");
         p.empilha("segundo");
