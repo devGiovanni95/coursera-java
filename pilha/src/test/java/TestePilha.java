@@ -43,11 +43,16 @@ public class TestePilha {
     public void removeDaPilhaVazia(){
         p.desempilha();
     }
-    @Test(expected = PilhaCheiaException.class)
+    @Test
     public void adicionaNaPilhaCheia(){
         for (int i=0; i<10; i++){
             p.empilha("elemento"+i);
         }
-        p.empilha("boom");
+        try {
+            p.empilha("boom");
+            fail();
+        }catch (PilhaCheiaException e){
+
+        }
     }
 }
