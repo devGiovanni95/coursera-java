@@ -1,4 +1,5 @@
 import org.example.Pilha;
+import org.example.PilhaVaziaException;
 import org.junit.Before;
 import org.junit.Test;
 
