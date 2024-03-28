@@ -2,8 +2,13 @@ package org.example;
 
 public class Pilha {
 
-    private Object[] elementos = new Object[10];
-    private int quantidade;
+    private Object[] elementos ;
+    private int quantidade = 0;
+
+    public Pilha(int maximo){
+        elementos = new Object[maximo];
+    }
+
     public boolean estaVazia() {
         return quantidade == 0;
     }
