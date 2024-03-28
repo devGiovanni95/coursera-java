@@ -20,4 +20,8 @@ public class Pilha {
     public  Object topo() {
         return elemento;
     }
+
+    public Object desempilha() {
+        return null;
+    }
 }
